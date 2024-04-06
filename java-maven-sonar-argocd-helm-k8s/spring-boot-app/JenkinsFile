@@ -7,7 +7,9 @@ pipeline {
   }
   stages {
     stage('Checkout') {
-      sh 'echo passed'
+      steps {
+        sh 'echo passed'
+      }
     }
     stage('Build and Test') {
       steps {
