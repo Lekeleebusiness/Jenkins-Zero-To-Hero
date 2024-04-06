@@ -7,9 +7,7 @@ pipeline {
   }
   stages {
     stage('Checkout') {
-      steps {
-        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/lekeleebusiness/Jenkins-Zero-To-Hero.git']])
-      }
+      echo "skipping"
     }
     stage('Build and Test') {
       steps {
